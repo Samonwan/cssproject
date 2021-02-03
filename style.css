@@ -1,32 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&display=swap');
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    margin: 0;
 }
 
-/* .landing {
-    flex-direction: column;
-    min-height: 50vh;
-    width: 100vw;
-    background: url(/images/mountain.jpeg);
-    background-size: cover;
-} */
+.landing {
+    background: url(https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?cs=srgb&dl=pexels-pixabay-268941.jpg&fm=jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size:cover; 
+}
+
+.landing h2 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 5rem;
+}
 
 .container {
     height: 100vh;
+    overflow: hidden;
     display: flex; /*this make element stack left to each other*/
     /*flex-direction: column; This set how flex would show*/
-    width: 90vw; /*This help you control view of element */
+    width: 80vw; /*This help you control view of element */
 }
 
 .panel {
@@ -39,7 +44,7 @@ body {
     border-radius: 30px;
     color: white;
     cursor: pointer;
-    flex: 1;
+    flex: 0.5;
     /* Setting size of flexbox */
     margin: 5px;
     position: relative;
@@ -65,7 +70,7 @@ body {
     transition: opacity 0.3s ease in 0.4s;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .container {
         width: 100vw;
     }
